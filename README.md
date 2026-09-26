@@ -2,7 +2,11 @@
 This repository contains records from the [rfc39](https://github.com/NixOS/rfc39) sync process.
 
 # Requesting a new invitation
-To request a new invitation:
+
+The rfc39 bot automatically invites [new Nixpkgs maintainers](https://github.com/nixos/nixpkgs/blob/master/maintainers/README.md#how-to-become-a-maintainer) to join the NixOS organization and the [NixOS/nixpkgs-maintainers](https://github.com/orgs/NixOS/teams/nixpkgs-maintainers) team.
+But the invitation is usually only sent by email, and is only valid for one week!
+
+If the invitation expired, please request a new invitation as follows:
 1. Find your GitHub user ID, by:
     1. going to `https://api.github.com/users/$YOUR_USERNAME` and getting the value from the "id" field,
     2. using the `gh` CLI (`nix-shell -p gh`), authenticating, then running `gh api /user --jq .id`, or
@@ -12,3 +16,4 @@ To request a new invitation:
 3. The pull request will be merged automatically.
     It may may take an hour or so for your new invitation to be sent to your primary GitHub email address.
     The new invitation will expire in one week.
+
